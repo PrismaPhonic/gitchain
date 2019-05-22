@@ -9,5 +9,5 @@ matrix:
   fast_finish: true
 cache: cargo
 script:
-  - cd gitchain-tool && cargo build --verbose --all
-  - cd gitchain-tool && cargo test --verbose --all
+  - cargo build --verbose --all
+  - cargo test --verbose --all

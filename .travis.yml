@@ -1,0 +1,13 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+cache: cargo
+script:
+  - cd gitchain-tool && cargo build --verbose --all
+  - cd gitchain-tool && cargo test --verbose --all

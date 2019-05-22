@@ -1,0 +1,45 @@
+[package]
+name = "gitchain"
+version = "0.1.0"
+authors = ["Peter Farr <Peter@PrismaPhonic.com>"]
+description = "gitchain allows you to make git commits with prefixes of zeros in the git hash."
+keywords = ["gitchain", "git", "version-control", "cryptography"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/PrismaPhonic/gitchain"
+documentation = "https://prismaphonic.github.io/gitchain/gitchain/index.html"
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "README.md"
+]
+
+[badges]
+travis-ci = { repository = "PrismaPhonic/gitchain", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[[bin]]
+doc = false
+name = "gitchain"
+path = "src/bin/gitchain.rs"
+
+[dependencies]
+structopt = "0.2.15"
+git2 = "0.8.0"
+rayon = "1.0.3"
+chrono = "0.4.6"
+time = "0.1.42"
+rust-crypto = "0.2.36"
+failure = "0.1.5"
+serde = "1.0.91"
+serde_derive = "1.0.91"
+
+[dev-dependencies]
+criterion = "0.2.11"
+tempfile = "3.0.8"
+
+[[bench]]
+name = "my_benchmark"
+harness = false

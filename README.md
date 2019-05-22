@@ -19,7 +19,7 @@ The committer will then use this to issue the desired commit with the correct ha
 
 For more details about the flow of data in the application:
 
-![Gitchain Flow Diagram](../images/Gitchain-Flow-Diagram.png)
+![Gitchain Flow Diagram](./images/Gitchain-Flow-Diagram.png)
 
 ## Install
 
@@ -104,6 +104,6 @@ LONG BENCHMARK TO GET A STATISTICAL AVERAGE THAT IS MEANINGFUL**
 
 After running criterion for roughly 2 hours on a six zero prefix test, I got the following results:
 
-![Mining Benchmarks](../images/Gitchain-Benchmarks.png)
+![Mining Benchmarks](./images/Gitchain-Benchmarks.png)
 
 License: MIT
